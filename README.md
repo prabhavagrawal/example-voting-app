@@ -50,3 +50,6 @@ docker run -d --name=db -e POSTGRES_HOST_AUTH_METHOD=trust postgres:9.4
 docker run -d --name=result -p 5001:80 --link redis:redis --link db:db result-app
 
 docker run -d --name=worker --link redis:redis --link db:db worker-app
+
+* Build status
+[![Build Status](http://localhost:8080/buildStatus/icon?job=instavote%2Fworker-buil)](http://localhost:8080/job/instavote/job/worker-buil/)
